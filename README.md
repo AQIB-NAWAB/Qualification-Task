@@ -101,9 +101,24 @@ It will download a JSON file. Open the file and copy the contents.
 
 Now you need to replace the following values in the `.env` file:
 
-- GOOGLE_CLIENT_EMAIL: The email address of the service account.
-- GOOGLE_PRIVATE_KEY: The private key of the service account.
-- GOOGLE_SHEET_ID: The ID of the Google Sheet to be used.
+- **GOOGLE_CLIENT_EMAIL**: The email address of the service account.
+- **GOOGLE_PRIVATE_KEY**: The private key of the service account.
+
+Now create a new google sheet and share it with the email address of the service account.
+
+Visit this [link](https://docs.google.com/spreadsheets/u/0/)
+
+Click on blank and create a new sheet.
+![alt text](image-13.png)
+
+Create a proper structure of the sheet. The first row should contain the column names.
+![alt text](image-14.png)
+
+Now share the sheet with the email address of the service account as editor.
+![alt text](image-15.png)
+
+Now you can access the sheet using the google sheet API.
+
 
 
 These all values can be found in the downloaded JSON file.
