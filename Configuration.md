@@ -1,4 +1,5 @@
 # Configuration
+
 This page contains the detailed steps to configure the project. Major configurations include setting up the Google Sheets API, Badgr API, and Cloudflare.
 
 ## General
@@ -19,7 +20,7 @@ Give it a name and click on create.
 
 ![alt text](assets/image-1.png)
 
-Visit the library 
+Visit the library
 ![alt text](assets/image.png)
 
 Search for Google Sheets API and enable it.
@@ -56,11 +57,12 @@ It will download a JSON file. Open the file and copy the contents.
 
 ![alt text](assets/image-12.png)
 
-
 Now you need to replace the following values in the `.env` file:
 
-- **GOOGLE_CLIENT_EMAIL**: The email address of the service account.
-- **GOOGLE_PRIVATE_KEY**: The private key of the service account.
+```ssh
+GOOGLE_CLIENT_EMAIL: YOUR_GOOGLE_CLIENT_EMAIL
+GOOGLE_PRIVATE_KEY: YOUR_GOOGLE_PRIVATE_KEY
+```
 
 Now create a new google sheet and share it with the email address of the service account.
 
@@ -78,37 +80,40 @@ Now share the sheet with the email address of the service account as editor.
 Now you can access the sheet using the google sheet API.
 
 ## Badgr API Configuration
+
 To get the required credentials for the Badgr API, follow these steps:
 
 1. Go to [Badgr](https://badgr.com/).
 2. Sign in to your account with email and password.
 3. Go to the issuer section.
-4. Click on the create issuer 
-![alt text](assets/image-16.png)
+4. Click on the create issuer
+   ![alt text](assets/image-16.png)
 5. Provide necessary details and click on create.
 
 Now you need to create the badge
 
 1. Click on create badge.
-![alt text](assets/image-17.png)
+   ![alt text](assets/image-17.png)
 2. Provide necessary details and click on create.
 
 Now you need to grab the credentials.
 
 1. Go to the issuer section.
 2. Click on the issuer you created.
-In url you will find the issuer id.
-![alt text](assets/image-18.png)
+   In url you will find the issuer id.
+   ![alt text](assets/image-18.png)
 3. Click on the badge you created.
-In url you will find the badge id.
-![alt text](assets/image-19.png)
+   In url you will find the badge id.
+   ![alt text](assets/image-19.png)
 
 Now you need to replace the following values in the `.env` file:
 
-- **BADGR_EMAIL**: The email address of the Badgr account.
-- **BADGR_PASSWORD**: The password of the Badgr account.
-- **ISSUER_ID**: The issuer id of the badge.
-- **BADGE_ID**: The badge id of the badge.
+```ssh
+BADGR_EMAIL: YOUR_BADGR_EMAIL
+BADGR_PASSWORD: YOUR_BADGR_PASSWORD
+ISSUER_ID: YOUR_ISSUER_ID
+BADGE_ID: YOUR_BADGE_ID
+```
 
 ## Cloudflare Configuration
 
@@ -116,5 +121,8 @@ visit this [link](https://dash.cloudflare.com/)
 Create an account and login.
 Get your CLOUDFLARE_ID from the dashboard.
 
+```ssh
+CLOUDFLARE_ID: YOUR_CLOUDFLARE_ID
+```
 
 These all values can be found in the downloaded JSON file
