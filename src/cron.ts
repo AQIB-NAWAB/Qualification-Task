@@ -39,7 +39,7 @@ const processCertificates = async (): Promise<void> => {
 
     return;
   } catch (error: any) {
-    logger.error(`Failed to process certificates: ${error.message}`);
+    logger.error(`Failed to process certificates: ${error}`);
   }
 };
 

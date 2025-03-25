@@ -29,7 +29,7 @@ export const issueBadge = async (studentData: StudentData, accessToken: string) 
     );
     return response.data;
   } catch (error: any) {
-    logger.error("Error while issuing badge:", error?.response?.data || error.message);
+    logger.error("Error while issuing badge:", error ||  error?.response?.data || error.message);
     return null;
   }
 };
