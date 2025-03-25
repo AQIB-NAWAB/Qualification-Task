@@ -119,6 +119,44 @@ Now share the sheet with the email address of the service account as editor.
 
 Now you can access the sheet using the google sheet API.
 
+## Badgr API Configuration
+To get the required credentials for the Badgr API, follow these steps:
+
+1. Go to [Badgr](https://badgr.com/).
+2. Sign in to your account with email and password.
+3. Go to the issuer section.
+4. Click on the create issuer 
+![alt text](image-16.png)
+5. Provide necessary details and click on create.
+
+Now you need to create the badge
+
+1. Click on create badge.
+![alt text](image-17.png)
+2. Provide necessary details and click on create.
+
+Now you need to grab the credentials.
+
+1. Go to the issuer section.
+2. Click on the issuer you created.
+In url you will find the issuer id.
+![alt text](image-18.png)
+3. Click on the badge you created.
+In url you will find the badge id.
+![alt text](image-19.png)
+
+Now you need to replace the following values in the `.env` file:
+
+- **BADGR_EMAIL**: The email address of the Badgr account.
+- **BADGR_PASSWORD**: The password of the Badgr account.
+- **ISSUER_ID**: The issuer id of the badge.
+- **BADGE_ID**: The badge id of the badge.
+
+## Cloudflare Configuration
+
+visit this [link](https://dash.cloudflare.com/)
+Create an account and login.
+Get your CLOUDFLARE_ID from the dashboard.
 
 
 These all values can be found in the downloaded JSON file.
