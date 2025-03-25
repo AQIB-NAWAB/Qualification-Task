@@ -1,0 +1,8 @@
+{
+	"name": "assign-badge",
+	"main": "src/index.js",
+	"compatibility_date": "2021-03-25",
+	"observability": {
+		"enabled": true,
+	},
+}

@@ -1,0 +1,21 @@
+{
+	"name": "get-assigned-users",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.7.5",
+		"vitest": "~3.0.7",
+		"wrangler": "^4.2.0"
+	},
+	"dependencies": {
+		"axios": "^1.8.4",
+		"express": "^4.21.2",
+		"googleapis": "^148.0.0"
+	}
+}
