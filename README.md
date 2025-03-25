@@ -1,4 +1,6 @@
-# Badge Assurance Qualification Task - README
+![Preview](assets/preview.png)
+
+# Badge Assurance Qualification Task 
 
 ## Overview
 
