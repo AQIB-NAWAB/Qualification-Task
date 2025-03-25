@@ -1,4 +1,5 @@
-![Preview](assets/preview.png)
+![Preview](assets/review.png)
+
 
 # Badge Assurance Qualification Task 
 
