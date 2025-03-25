@@ -33,6 +33,42 @@ npm install
 
 This will install all required dependencies for the project.
 
+## Wrangler
+
+To deploy , test and manage the cloudflare workers you need to install the wrangler. You can install the wrangler by running the following command:
+
+```sh
+npm install -g @cloudflare/wrangler
+```
+
+```sh
+wrangler login
+```
+
+```sh
+wrangler whoami
+```
+
+
+## Cloudflare Workers
+
+To test the cloudflare workers locally you need to install the packages of the cloudflare workers.
+
+```sh
+cd workers
+```
+Currently there are two workers in the project. You can install the packages for both workers by running the following command:
+
+```sh
+cd assign-badge
+npm install
+```
+
+```sh
+cd get-assigned-users
+npm install
+```
+
 ## Configuration
 
 Now you need to setup the configuration for the project. Run the following command:
@@ -45,6 +81,16 @@ This will create a new `.env` file in the project root. Open the file and update
 
 Please visit the [Configuration](Configuration.md) guide to set up the project.
 
+## Scripts
+
+The project comes with several scripts to help you with different tasks. You can run these scripts using `npm run <script-name>`.
+
+Here are some of the scripts available:
+
+- `setup-deploy`: Deploys the all cloudflare workers 
+- `setup-secrets`: Sets up the necessary secrets for the cloudflare workers 
+- `start`: Starts the server
+- `dev`: Starts the server in development mode
 
 ## Running the Project
 
