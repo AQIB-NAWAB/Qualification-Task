@@ -103,6 +103,7 @@ async function updateGoogleSheet(GOOGLE_SHEET_ID, accessToken, email) {
 
 	if (rowIndex === -1) throw new Error('Email not found in Google Sheets');
 
+
 	// Update the sheet with the new status true
 	const updateUrl = `https://sheets.googleapis.com/v4/spreadsheets/${GOOGLE_SHEET_ID}/values/Sheet1!C${rowIndex}?valueInputOption=USER_ENTERED`;
 	await axios.put(updateUrl, { values: [['TRUE']] }, { headers });
