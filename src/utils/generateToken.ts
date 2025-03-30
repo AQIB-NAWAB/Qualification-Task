@@ -14,7 +14,6 @@ export const getAccessToken = async (): Promise<string> => {
       params.append('username', config.badgr.email);
       params.append('password', config.badgr.password);
       
-      console.log(config.badgr);
       
       const response = await axios.post(`${config.badgr.endpoint}/o/token`, params, {
         headers: {
